@@ -1,0 +1,323 @@
+html, body {
+  font-size: 14px;
+    height: 100%;
+}
+
+h1{
+    align-items: center;
+
+}
+
+.tituloviews{
+  align-items: center;
+  justify-self: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #72a013 !important;
+}
+.lodepatologo {
+	width: 100px;
+	height: 100px;
+}
+
+.container-quienessomos {
+    text-align: center;
+    margin:auto;
+    background-color: #f4fcf3;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.logos {
+    display: flex; /* Para alinear el icono y el texto del carrito horizontalmente */
+    align-items: center;
+    text-decoration: none;
+    margin-left: auto;
+  }
+
+.ingresar{
+    width: 40px;
+	height: 40px;
+}
+
+.carrito{
+    width: 40px;
+	height: 40px;
+}
+
+
+.card{
+height: 250px;
+}
+
+.card-img-top{
+	width:100%;
+	height:200px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+header{
+	background-color:  #f4fcf3;
+    color:  black;
+    font: weight 30px;
+}
+
+/*PREGUNTAS FRECUENTES*/
+
+.preguntas{
+    margin:auto;
+    background-color: #f4fcf3;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 60px;
+
+}
+
+.button {
+    background-color: #f4fcf3;
+    color: #72a013;
+    border: 1px solid #72a013; /* Opcional: agrega un borde para mejor contraste */
+  }
+
+.button:hover {
+background-color: #72a013;
+color: #f4fcf3;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #72a013;
+  color: white;
+  padding:10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* Oculto por defecto */
+}
+
+.back-to-top:hover {
+  background-color: #f4fcf3;
+  color: #72a013;
+  border: 1px solid #72a013 ;
+}
+
+
+/*PRODUCTOS*/  
+
+/* Configuración del grid para 3 columnas */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 20px; /* Espacio entre productos */
+  padding: 20px;
+}
+
+/* Contenedor de producto */
+.product {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #72a013;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Distribuir elementos verticalmente */
+  height: auto; /* Ajuste automático según contenido */
+  padding: 10px; /* Ajuste de padding para un marco compacto */
+  
+}
+
+/* Imagen del producto */
+.product-image {
+  width: 100%;
+  height: 156px;
+  max-height: 180px; /* Fijar altura máxima sin recortar */
+  object-fit: contain; /* Evitar que la imagen se recorte */
+  transition: transform 0.3s ease;
+  margin-bottom: 10px; /* Espacio pequeño debajo de la imagen */
+  aspect-ratio: 1 / 1;
+}
+
+/* Información del producto */
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; /* Espacio entre título y precio */
+  padding: 0; /* Eliminar padding extra */
+  margin: 0; /* Eliminar margen */
+}
+
+.product-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: black;
+  margin: 0; /* Sin margen extra */
+}
+
+.product-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  margin: 0; /* Sin margen extra */
+}
+
+/* Efectos de hover */
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product:hover .product-image,
+.product:hover .product-info {
+  transform: scale(1.1);
+}
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+  /*FOOTER*/
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.footer-logo img {
+    align-items: start;
+    height: 100px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.footer-column {
+    margin: 0 5px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin: 5px 0;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer {
+    background-color: #f4fcf3; 
+    padding: 1rem 0;
+
+}
+
+/* CAROUSEL*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bodycarousel {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100vw; /* Ocupa todo el ancho de la ventana */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 2s ease; /* Transición de 2 segundos */
+}
+
+.carousel img {
+  height: auto; /* Mantiene la relación de aspecto */
+  margin-right: 25px;
+}
+
+/*INSTITUCIONAL*/
+
+.full-width-container {
+  background-color: #72a013 ; 
+  padding: 20px 0;
+  width:100%;
+}
+
+.color-contact {
+background-color: #bccdf5
+}
+
+.imagen-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  height: 100vh; /* O el tamaño que prefieras para el contenedor */
+}
+
+.imginstitucional {
+  height: 150px;
+  width: 150px;
+  object-fit: cover; /* Asegura que la imagen mantenga la relación de aspecto sin estirarse */
+  padding: 2px;
+}
+
+/*contacto*/
+
+.color-contact {
+  background-color: #f4fcf3; /* Ajusta este color como prefieras */
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #72a013;
+}
+
+/* Ajusta el tamaño y centrado del botón */
+#enviar_contacto {
+  width: 100px;
+  background-color: #72a013;
+  color: #f4fcf3;
+  border: 1px solid #f4fcf3
+
+}
+
+#enviar_queja{
+  width: 100px;
+  background-color: #72a013;
+  color: #f4fcf3;
+  border: 1px solid #f4fcf3
+}
