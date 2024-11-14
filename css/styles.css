@@ -47,6 +47,11 @@ h1{
 	height: 40px;
 }
 
+.registrarse{
+    width: 40px;
+	height: 40px;
+
+}
 
 .card{
 height: 250px;
@@ -308,7 +313,7 @@ background-color: #bccdf5
 }
 
 /* Ajusta el tamaño y centrado del botón */
-#enviar_contacto {
+#enviar_contacto, #enviar_queja, #registrarse {
   width: 100px;
   background-color: #72a013;
   color: #f4fcf3;
@@ -316,21 +321,7 @@ background-color: #bccdf5
 
 }
 
-#enviar_queja{
-  width: 100px;
-  background-color: #72a013;
-  color: #f4fcf3;
-  border: 1px solid #f4fcf3
-}
-
-#registrarse{
-  width: 100px;
-  background-color: #72a013;
-  color: #f4fcf3;
-  border: 1px solid #f4fcf3
-}
-
-#iniciarsesion{
+#iniciarsesion, #seguircomprando, #irapagar{
   background-color: #72a013;
   color: #f4fcf3;
   border: 1px solid #f4fcf3

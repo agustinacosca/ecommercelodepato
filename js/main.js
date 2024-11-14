@@ -90,3 +90,66 @@ const container = document.getElementById('productos-container');
     container.innerHTML = "<p>Hubo un error al cargar los productos. Intenta nuevamente más tarde.</p>";
   });*/
 
+/*CARRITO*/
+
+// Array para almacenar los productos en el carrito
+let carrito = [
+  { nombre: "Producto 1", precio: 10, cantidad: 1 },
+  { nombre: "Producto 2", precio: 20, cantidad: 2 }
+];
+
+// Función para renderizar el carrito en la tabla
+function renderizarCarrito() {
+  const cartItems = document.getElementById("cart-items");
+  cartItems.innerHTML = ""; // Limpiar el contenido previo
+
+  let total = 0;
+  carrito.forEach((producto, index) => {
+      const subtotal = producto.precio * producto.cantidad;
+      total += subtotal;
+
+      // Crear fila para cada producto
+      const row = document.createElement("tr");
+      row.innerHTML = `
+          <td>${producto.nombre}</td>
+          <td>$${producto.precio.toFixed(2)}</td>
+          <td>
+              <input type="number" value="${producto.cantidad}" min="1" class="form-control cantidad-input" onchange="actualizarCantidad(${index}, this.value)">
+          </td>
+          <td>$${subtotal.toFixed(2)}</td>
+          <td>
+              <button class="btn btn-danger btn-sm" onclick="eliminarProducto(${index})">Eliminar</button>
+          </td>
+      `;
+      cartItems.appendChild(row);
+  });
+
+  // Actualizar total
+  document.getElementById("total").innerText = total.toFixed(2);
+}
+
+// Función para actualizar la cantidad de un producto
+function actualizarCantidad(index, nuevaCantidad) {
+  carrito[index].cantidad = parseInt(nuevaCantidad);
+  renderizarCarrito();
+}
+
+// Función para eliminar un producto del carrito
+function eliminarProducto(index) {
+  carrito.splice(index, 1);
+  renderizarCarrito();
+}
+
+// Función para seguir comprando
+function seguirComprando() {
+  window.location.href = "productos.html"; // Cambia esta URL según sea necesario
+}
+
+// Función para ir a pagar
+function irAPagar() {
+  alert("Redirigiendo a la página de pago...");
+  window.location.href = "pago.html"; // Cambia esta URL según sea necesario
+}
+
+// Renderizar el carrito al cargar la página
+renderizarCarrito();
