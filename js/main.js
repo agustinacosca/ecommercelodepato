@@ -1,5 +1,4 @@
 
-
 // main.js
 fetch('header.html')
   .then(response => response.text())
@@ -75,7 +74,7 @@ fetch('footer.html')
 const container = document.getElementById('productos-container');
 
 // Función para cargar el archivo aromasproductos.html
-fetch('aromasproductos.html')
+/* fetch('aromasproductos.html')
   .then(response => {
     // Verificar si la solicitud fue exitosa
     if (!response.ok) {
@@ -86,7 +85,7 @@ fetch('aromasproductos.html')
   .then(data => {
     container.innerHTML = data; // Inserta el contenido en el contenedor
   })
- /* .catch(error => {
+ .catch(error => {
     console.error('Hubo un problema con la solicitud:', error);
     container.innerHTML = "<p>Hubo un error al cargar los productos. Intenta nuevamente más tarde.</p>";
   });*/
