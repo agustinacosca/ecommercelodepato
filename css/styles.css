@@ -196,6 +196,7 @@ color: #f4fcf3;
 
   /*FOOTER*/
 
+ 
 .footer-column a:hover {
     text-decoration: underline;
 }
@@ -240,8 +241,8 @@ color: #f4fcf3;
 .footer {
     background-color: #f4fcf3; 
     padding: 1rem 0;
-
 }
+
 
 /* CAROUSEL*/
 
@@ -317,6 +318,19 @@ background-color: #bccdf5
 
 #enviar_queja{
   width: 100px;
+  background-color: #72a013;
+  color: #f4fcf3;
+  border: 1px solid #f4fcf3
+}
+
+#registrarse{
+  width: 100px;
+  background-color: #72a013;
+  color: #f4fcf3;
+  border: 1px solid #f4fcf3
+}
+
+#iniciarsesion{
   background-color: #72a013;
   color: #f4fcf3;
   border: 1px solid #f4fcf3
