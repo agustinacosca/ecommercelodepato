@@ -10,16 +10,19 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <header id="header"></header>
+
     <main class="container my-5">
       <h1 class="tituloviews">COCINA</h1>
       <div class="row row-cols-1 row-cols-md-4 g-4 mt-4">
         <!-- Ejemplo de un producto, replicar para cada producto -->
         <div class="col">
           <div class="product">
+            <a href="detalle_producto.html" class="product-link">
+              <!-- Enlace al producto -->
               <img
                 src="img/cocina/olla.png"
                 class="product-image"
@@ -47,6 +50,8 @@
         <!-- Repite el bloque anterior para cada producto -->
         <div class="col">
           <div class="product">
+            <a href="detalle_producto.html" class="product-link">
+              <!-- Enlace al producto -->
               <img
                 src="img/cocina/platoceramica.jpeg"
                 class="product-image"
@@ -74,6 +79,8 @@
         <!-- Repite el bloque anterior para cada producto -->
         <div class="col">
           <div class="product">
+            <a href="detalle_producto.html" class="product-link">
+              <!-- Enlace al producto -->
               <img
                 src="img/cocina/vaso.jpeg"
                 class="product-image"
@@ -95,11 +102,14 @@
                 Agregar al carrito
               </button>
               </div>
+            </a>
           </div>
         </div>
         <!-- Repite el bloque anterior para cada producto -->
         <div class="col">
           <div class="product">
+            <a href="detalle_producto.html" class="product-link">
+              <!-- Enlace al producto -->
               <img
                 src="img/cocina/kitcocina.jpeg"
                 class="product-image"
@@ -121,6 +131,7 @@
                 Agregar al carrito
               </button>
               </div>
+            </a>
           </div>
         </div>
 
@@ -238,6 +249,227 @@
           </div>
         </div>
       </div>
+
+      <h1 class="tituloviews mt-5">BAÑO</h1>
+      <div class="row row-cols-1 row-cols-md-4 g-4 mt-4">
+        <!-- Ejemplo de un producto, replicar para cada producto -->
+        <div class="col">
+          <div class="product">
+            <img
+              src="img/baño/portacepillo.jpeg"
+              class="product-image"
+              alt="Porta cepillo"
+            />
+            <div class="product-info">
+              <h5 class="product-title">Porta cepillo</h5>
+              <p class="product-price">$<span class="price">7400</span></p>
+              <!-- Botón para agregar al carrito -->
+              <button
+                class="button btn btn-success my-2"
+                onclick="agregarAlCarrito({
+                  id: 1,
+                  nombre: 'Porta cepillo',
+                  precio: 7400,
+                  cantidad: 1
+                })"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Repite el bloque anterior para cada producto -->
+        <div class="col">
+          <div class="product">
+            <img
+              src="img/baño/setantideslizante.jpeg"
+              class="product-image"
+              alt="Producto 2"
+            />
+            <div class="product-info">
+              <h5 class="product-title">Set antideslizante</h5>
+              <p class="product-price">$<span class="price">5500</span></p>
+              <!-- Botón para agregar al carrito -->
+              <button
+                class="button btn btn-success my-2"
+                onclick="agregarAlCarrito({
+                  id: 2,
+                  nombre: 'Set antideslizante',
+                  precio: 5500,
+                  cantidad: 1
+                })"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Repite el bloque anterior para cada producto -->
+        <div class="col">
+          <div class="product">
+              <img
+                src="img/baño/cortinaplastica.jpg"
+                class="product-image"
+                alt="Producto 3"
+              />
+              <div class="product-info">
+                <h5 class="product-title">Cortina Plastica</h5>
+                <p class="product-price">$<span class="price">12000</span></p>
+                <!-- Botón para agregar al carrito -->
+                <button
+                  class="button btn btn-success my-2"
+                  onclick="agregarAlCarrito({
+                  id: 3,
+                  nombre: 'Cortina Plastica',
+                  precio: 12000,
+                  cantidad: 1
+                })"
+                >
+                  Agregar al carrito
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Repite el bloque anterior para cada producto -->
+        <div class="col">
+          <div class="product">
+              <img
+                src="img/baño/esquinerosimple.jpeg"
+                class="product-image"
+                alt="Producto 4"
+              />
+              <div class="product-info">
+                <h5 class="product-title">Esquinero simple</h5>
+                <p class="product-price">$<span class="price">14500</span></p>
+                <!-- Botón para agregar al carrito -->
+                <button
+                  class="button btn btn-success my-2"
+                  onclick="agregarAlCarrito({
+                  id: 4,
+                  nombre: 'Esquinero simple',
+                  precio: 14500,
+                  cantidad: 1
+                })"
+                >
+                  Agregar al carrito
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="product">
+              <img
+                src="img/baño/jaboneraquo.jpeg"
+                class="product-image"
+                alt="Producto 5"
+              />
+              <div class="product-info">
+                <h5 class="product-title">Jabonera QUO</h5>
+                <p class="product-price">$<span class="price">7500</span></p>
+                <!-- Botón para agregar al carrito -->
+                <button
+                  class="button btn btn-success my-2"
+                  onclick="agregarAlCarrito({
+                  id: 5,
+                  nombre: 'Jabonera QUO',
+                  precio: 7500,
+                  cantidad: 1
+                })"
+                >
+                  Agregar al carrito
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="product">
+              <img
+                src="img/baño/setaccesoriobaño.jpeg"
+                class="product-image"
+                alt="Producto 6"
+              />
+              <div class="product-info">
+                <h5 class="product-title">Set accesorios baño</h5>
+                <p class="product-price">$<span class="price">22000</span></p>
+                <!-- Botón para agregar al carrito -->
+                <button
+                  class="button btn btn-success my-2"
+                  onclick="agregarAlCarrito({
+                  id: 6,
+                  nombre: 'Set accesorios baño',
+                  precio: 22000,
+                  cantidad: 1
+                })"
+                >
+                  Agregar al carrito
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="product">
+              <img
+                src="img/baño/alfombradebaño.jpeg"
+                class="product-image"
+                alt="Producto 7"
+              />
+              <div class="product-info">
+                <h5 class="product-title">Alfombra de baño</h5>
+                <p class="product-price">$<span class="price">19000</span></p>
+                <!-- Botón para agregar al carrito -->
+                <button
+                  class="button btn btn-success my-2"
+                  onclick="agregarAlCarrito({
+                  id: 7,
+                  nombre: 'Alfombra de baño',
+                  precio: 19000,
+                  cantidad: 1
+                })"
+                >
+                  Agregar al carrito
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="product">
+              <img
+                src="img/baño/toalladerostro.jpeg"
+                class="product-image"
+                alt="Producto 8"
+              />
+              <div class="product-info">
+                <h5 class="product-title">Toalla de rostro</h5>
+                <p class="product-price">$<span class="price">7800</span></p>
+                <!-- Botón para agregar al carrito -->
+                <button
+                  class="button btn btn-success my-2"
+                  onclick="agregarAlCarrito({
+                  id: 8,
+                  nombre: 'Toalla de rostro',
+                  precio: 7800,
+                  cantidad: 1
+                })"
+                >
+                  Agregar al carrito
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
     </main>
 
     <!-- Botón para regresar al inicio -->

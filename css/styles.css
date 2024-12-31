@@ -8,7 +8,7 @@ h1{
 
 }
 
-.tituloviews{
+.tituloviews, .titulopago{
   align-items: center;
   justify-self: center;
   font-size: 2rem;
@@ -321,8 +321,21 @@ background-color: #bccdf5
 
 }
 
-#iniciarsesion, #seguircomprando, #irapagar{
+#iniciarsesion, #seguircomprando, #irapagar, #volverAlCarrito, #pago{
   background-color: #72a013;
   color: #f4fcf3;
   border: 1px solid #f4fcf3
 }
+
+/*pago*/
+
+.formpago{
+  padding: 20px;
+ 
+
+}
+
+.titulopago{
+  text-align: center;
+}
+

@@ -20,42 +20,58 @@
         <!-- Ejemplo de un producto, replicar para cada producto -->
         <div class="col">
           <div class="product">
-            <a href="detalle_producto.html" class="product-link">
-              <!-- Enlace al producto -->
-              <img
-                src="img/baño/portacepillo.jpeg"
-                class="product-image"
-                alt="Producto 1"
-              />
-              <div class="product-info">
-                <h5 class="product-title">Porta cepillo</h5>
-                <p class="product-price">$7.400</p>
-              </div>
-            </a>
+            <img
+              src="img/baño/portacepillo.jpeg"
+              class="product-image"
+              alt="Porta cepillo"
+            />
+            <div class="product-info">
+              <h5 class="product-title">Porta cepillo</h5>
+              <p class="product-price">$<span class="price">7400</span></p>
+              <!-- Botón para agregar al carrito -->
+              <button
+                class="button btn btn-success my-2"
+                onclick="agregarAlCarrito({
+                  id: 1,
+                  nombre: 'Porta cepillo',
+                  precio: 7400,
+                  cantidad: 1
+                })"
+              >
+                Agregar al carrito
+              </button>
+            </div>
           </div>
         </div>
         <!-- Repite el bloque anterior para cada producto -->
         <div class="col">
           <div class="product">
-            <a href="detalle_producto.html" class="product-link">
-              <!-- Enlace al producto -->
-              <img
-                src="img/baño/setantideslizante.jpeg"
-                class="product-image"
-                alt="Producto 2"
-              />
-              <div class="product-info">
-                <h5 class="product-title">Set antideslizante</h5>
-                <p class="product-price">$5.500</p>
-              </div>
-            </a>
+            <img
+              src="img/baño/setantideslizante.jpeg"
+              class="product-image"
+              alt="Producto 2"
+            />
+            <div class="product-info">
+              <h5 class="product-title">Set antideslizante</h5>
+              <p class="product-price">$<span class="price">5500</span></p>
+              <!-- Botón para agregar al carrito -->
+              <button
+                class="button btn btn-success my-2"
+                onclick="agregarAlCarrito({
+                  id: 2,
+                  nombre: 'Set antideslizante',
+                  precio: 5500,
+                  cantidad: 1
+                })"
+              >
+                Agregar al carrito
+              </button>
+            </div>
           </div>
         </div>
         <!-- Repite el bloque anterior para cada producto -->
         <div class="col">
           <div class="product">
-            <a href="detalle_producto.html" class="product-link">
-              <!-- Enlace al producto -->
               <img
                 src="img/baño/cortinaplastica.jpg"
                 class="product-image"
@@ -63,16 +79,25 @@
               />
               <div class="product-info">
                 <h5 class="product-title">Cortina Plastica</h5>
-                <p class="product-price">$12.000</p>
+                <p class="product-price">$<span class="price">12000</span></p>
+                <!-- Botón para agregar al carrito -->
+                <button
+                  class="button btn btn-success my-2"
+                  onclick="agregarAlCarrito({
+                  id: 3,
+                  nombre: 'Cortina Plastica',
+                  precio: 12000,
+                  cantidad: 1
+                })"
+                >
+                  Agregar al carrito
+                </button>
               </div>
-            </a>
           </div>
         </div>
         <!-- Repite el bloque anterior para cada producto -->
         <div class="col">
           <div class="product">
-            <a href="detalle_producto.html" class="product-link">
-              <!-- Enlace al producto -->
               <img
                 src="img/baño/esquinerosimple.jpeg"
                 class="product-image"
@@ -80,16 +105,25 @@
               />
               <div class="product-info">
                 <h5 class="product-title">Esquinero simple</h5>
-                <p class="product-price">$14.500</p>
+                <p class="product-price">$<span class="price">14500</span></p>
+                <!-- Botón para agregar al carrito -->
+                <button
+                  class="button btn btn-success my-2"
+                  onclick="agregarAlCarrito({
+                  id: 4,
+                  nombre: 'Esquinero simple',
+                  precio: 14500,
+                  cantidad: 1
+                })"
+                >
+                  Agregar al carrito
+                </button>
               </div>
-            </a>
           </div>
         </div>
 
         <div class="col">
           <div class="product">
-            <a href="detalle_producto.html" class="product-link">
-              <!-- Enlace al producto -->
               <img
                 src="img/baño/jaboneraquo.jpeg"
                 class="product-image"
@@ -97,16 +131,25 @@
               />
               <div class="product-info">
                 <h5 class="product-title">Jabonera QUO</h5>
-                <p class="product-price">$7.500</p>
+                <p class="product-price">$<span class="price">7500</span></p>
+                <!-- Botón para agregar al carrito -->
+                <button
+                  class="button btn btn-success my-2"
+                  onclick="agregarAlCarrito({
+                  id: 5,
+                  nombre: 'Jabonera QUO',
+                  precio: 7500,
+                  cantidad: 1
+                })"
+                >
+                  Agregar al carrito
+                </button>
               </div>
-            </a>
           </div>
         </div>
 
         <div class="col">
           <div class="product">
-            <a href="detalle_producto.html" class="product-link">
-              <!-- Enlace al producto -->
               <img
                 src="img/baño/setaccesoriobaño.jpeg"
                 class="product-image"
@@ -114,7 +157,19 @@
               />
               <div class="product-info">
                 <h5 class="product-title">Set accesorios baño</h5>
-                <p class="product-price">$22.000</p>
+                <p class="product-price">$<span class="price">22000</span></p>
+                <!-- Botón para agregar al carrito -->
+                <button
+                  class="button btn btn-success my-2"
+                  onclick="agregarAlCarrito({
+                  id: 6,
+                  nombre: 'Set accesorios baño',
+                  precio: 22000,
+                  cantidad: 1
+                })"
+                >
+                  Agregar al carrito
+                </button>
               </div>
             </a>
           </div>
@@ -122,8 +177,6 @@
 
         <div class="col">
           <div class="product">
-            <a href="detalle_producto.html" class="product-link">
-              <!-- Enlace al producto -->
               <img
                 src="img/baño/alfombradebaño.jpeg"
                 class="product-image"
@@ -131,7 +184,19 @@
               />
               <div class="product-info">
                 <h5 class="product-title">Alfombra de baño</h5>
-                <p class="product-price">$19.000</p>
+                <p class="product-price">$<span class="price">19000</span></p>
+                <!-- Botón para agregar al carrito -->
+                <button
+                  class="button btn btn-success my-2"
+                  onclick="agregarAlCarrito({
+                  id: 7,
+                  nombre: 'Alfombra de baño',
+                  precio: 19000,
+                  cantidad: 1
+                })"
+                >
+                  Agregar al carrito
+                </button>
               </div>
             </a>
           </div>
@@ -139,8 +204,6 @@
 
         <div class="col">
           <div class="product">
-            <a href="detalle_producto.html" class="product-link">
-              <!-- Enlace al producto -->
               <img
                 src="img/baño/toalladerostro.jpeg"
                 class="product-image"
@@ -148,13 +211,27 @@
               />
               <div class="product-info">
                 <h5 class="product-title">Toalla de rostro</h5>
-                <p class="product-price">$7.800</p>
+                <p class="product-price">$<span class="price">7800</span></p>
+                <!-- Botón para agregar al carrito -->
+                <button
+                  class="button btn btn-success my-2"
+                  onclick="agregarAlCarrito({
+                  id: 8,
+                  nombre: 'Toalla de rostro',
+                  precio: 7800,
+                  cantidad: 1
+                })"
+                >
+                  Agregar al carrito
+                </button>
               </div>
-            </a>
           </div>
         </div>
       </div>
     </main>
+    <div class="d-flex justify-content-end align-items-center mx-3">
+      <h4>Total: $<span id="total">0.00</span></h4>
+    </div>
 
     <!-- Botón para regresar al inicio -->
     <div class="back-to-top" onclick="scrollToTop()">↑</div>
